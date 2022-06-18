@@ -13,7 +13,7 @@ import (
 type DbInstance struct {
 	Db *gorm.DB
 }
-
+//MySql connecting
 const DNS = "root:392743.eE@tcp(127.0.0.1:3306)/godb?charset=utf8mb4&parseTime=True&loc=Local"
 
 var Database DbInstance
@@ -34,7 +34,7 @@ func ConnectDb() {
 		Db: db,
 	}
 }
-
+//Other connection
 //--------------------------------------------
 // var DB *gorm.DB
 // var err error
